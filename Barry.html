@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barry</title>
+        <style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+        p {font-size: 30px;}
+        p{color: rgb(0, 0, 0);}
+        P{margin-left: 1%;}
+        p1{font-size: 30px;}
+        p1{color: rgb(0, 0, 0);}
+        P1{margin-left: 1%;}
+        p2{font-size: 20px;}
+        p2{color: rgb(0, 0, 0);}
+        P2{margin-left: 1%;}
+        h1{margin-left: 5%;}
+        h1{font-size: 50px;}
+        h2{margin-left: 27%;}
+        h2{font-size: 50px;}
+        h3{margin-left: 5%;}
+        h3{font-size: 50px;}
+        h3{border-style: dashed;}
+        h4{font-size: 40px;}
+        h4{padding: 40px 0;}
+        h5{font-size: 35px;}
+        h5{padding: 40px 0;}
+        
+        table {
+  width: 100%;
+}
+.poster{
+td{
+  width: 50%;
+  padding-left: 10%;
+}
+}
+.zoom:hover {
+  transform: scale(1.1);
+  transition: transform .3s; 
+}
+.column {
+  float: left;
+  width: 19%;
+  padding-left:3%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cerc{border-radius:100%;}
+
+.column1 {
+  float: left;
+  width: 20%;
+  margin-left: 20%;
+  justify-content: center;
+  display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+.column2 {
+  width: 41%;
+  display: flex;
+    
+}
+.column3 {
+  
+  width: 50%;
+  display: table;
+}
+.column4 {
+  float: left;
+  width: 20%;
+  margin-left: 20%;
+  justify-content: center;
+  display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.top-text, .bottom-text {
+    margin: 10px;
+    text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active1 {
+  background-color: #e21212;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+.accordion {
+  background-color: #ffffff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+        </style>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="Barry.html" class="active1">Acasă</a>
+            <div class="dropdown">
+              <button class="dropbtn">Sezoane
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="S1.html">Sezonul 1</a>
+                <a href="S2.html">Sezonul 2</a>
+                <a href="S3.html">Sezonul 3</a>
+                <a href="S4.html">Sezonul 4</a>
+              </div>
+            </div> 
+            <a href="Distribuție.html">Distribuție</a>
+            <a href="Premii.html">Premii</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+        <audio autoplay>
+            <source src="sunet/Barry Main Theme.mp3" type="audio/mpeg"/>
+        </audio>
+        <img src="imagini/Barry_Logo.png" width="100%" class="center">
+        <p1 style="color:rgb(0, 0, 0);">
+            Barry este un serial de televiziune american de comedie neagră creat de Alec Berg și Bill Hader, care a avut premiera, pe HBO, pe 25 martie 2018 și s-a încheiat pe 28 mai 2023, după patru sezoane și 32 de episoade. Hader joacă rolul lui Barry Berkman, un fost marin american din Cleveland, care lucrează ca asasin; când călătorește la Los Angeles pentru a ucide o țintă, se trezește să se alăture unui curs de actorie predat de Gene Cousineau (Henry Winkler), unde o întâlnește pe aspirantă actriță Sally Reed (Sarah Goldberg) și începe să-și pună la îndoială calea în viață, în timp ce de-a face cu asociații săi criminali precum Monroe Fuches (Stephen Root) și NoHo Hank (Anthony Carrigan).
+            Barry a primit aprecieri de critică, cele mai multe laude fiind pentru regie, scriere, originalitate, umor, personaje și spectacole (în special cele ale lui Hader și Winkler). Mai mulți critici l-au etichetat drept unul dintre cele mai bune seriale de televiziune din toate timpurile.
+        </p1>
+        <h1 align="margin-left"><b><i><u>Premisa</u></i></b></h1>
+        <p1>Barry îl urmărește pe Barry Berkman, un militar american și veteran din Afganistan, din Cleveland, care lucrează ca asasin și se luptă cu singurătatea, depresia și vinovăția cauzate de stilul său de viață, precum și de acțiunile sale în timpul serviciului său. Călătorește la Los Angeles pentru a ucide o țintă și își găsește un nou scop în viață atunci când își urmărește ținta într-o clasă de actorie. După ce s-a alăturat clasei și și-a făcut planuri pentru a deveni actor, folosind noua sa pasiune ca o ieșire pentru anxietatea sa, se luptă să se distanțeze de vechea sa viață și să-și păstreze trecutul secret față de noii prieteni și colegi.
+        </p1>
+        <button class="accordion"><h3 align="center"><b><i>Sezoane</i></b></h1></button>
+            <div class="panel">
+<table class="poster">
+    <tr>
+        <td class="zoom"><a href="S1.html"><img src="imagini/B1.jpg" width="80%"/></a></td>
+        <td class="zoom"><a href="S2.html"><img src="imagini/B2.jpg" width="80%"/></a></td>
+    </tr>
+    <tr> <td><a href="S1.html"><h2>Sezonul 1</h2></a></td>
+        <td><a href="S2.html"><h2>Sezonul 2</h2></a></td>
+    </tr>
+    <tr>
+        <td class="zoom"><a href="S3.html"><img src="imagini/B3.jpg" width="80%"/></a></td>
+        <td class="zoom"><a href="S4.html"><img src="imagini/B4.jpg" width="80%"/></a></td>
+    </tr>
+    <tr> 
+        <td><a href="S3.html"><h2>Sezonul 3</h2></a></td>
+        <td><a href="S4.html"><h2>Sezonul 4</h2></a></td>
+   </tr>
+</table>
+</div>
+<button class="accordion"><h3 align="center"><b><i>Distribuție și Personaje</i></b></h1></button>
+    <div class="panel">
+    <div class="row" >
+<div class="column"><img src="imagini/Bill Hader.jpg" class="cerc" width="100%"/></div>
+<div class="column"><h4>Bill Hadder</h4> <p>Barry Berkman</p> <p>32 episoade • 2018-2023</p></div>
+<div class="column"><img src="imagini/Sthephen Root.jpg" class="cerc" width="100%"/></div>
+<div class="column"><h4>Stephen Root</h4> <p>Monroe Fuches</p> <p>32 episoade • 2018-2023</p></div>
+    </div>
+    <br><br><br>
+    <div class="row" >
+        <div class="column"><img src="imagini/Sarah Goldberg.jpg" class="cerc" width="100%"/></div>
+        <div class="column"><h4>Sarah Goldberg</h4> <p>Sally Reed</p> <p>32 episoade • 2018-2023</p></div>
+        <div class="column"><img src="imagini/Henry Winkler.jpg" class="cerc" width="100%"/></div>
+        <div class="column"><h4>Henry Winkler</h4> <p>Gene Cousineau</p> <p>32 episoade • 2018-2023</p></div>
+            </div>
+            <br><br><br>
+            <div class="row" >
+                <div class="column"><img src="imagini/Anthony Carrigan.jpg" class="cerc" width="100%"/></div>
+                <div class="column"><h4>Anthony Carrigan</h4> <p>NoHo Hank</p> <p>32 episoade • 2018-2023</p></div>
+                <div class="column"><img src="imagini/Michael Irby.jpg" class="cerc" width="100%"/></div>
+                <div class="column"><h4>Michael Irby</h4> <p>Cristobal Sifuentes</p> <p>18 episoade • 2018-2023</p></div>
+                </div>
+                <br><br><br>
+                <div class="row" >
+                    <div class="column"><img src="imagini/D'Arcy Carden.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>D'Arcy Carden</h4> <p>Natalie Greer</p> <p>20 episoade • 2018-2023</p></div>
+                    <div class="column"><img src="imagini/Rightor Doyle.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Rightor Doyle</h4> <p>Nick Nicholby</p> <p>18 episoade • 2018-2023</p></div>
+                    </div>
+                <br><br><br>
+                <div class="row" >
+                    <div class="column"><img src="imagini/Darrell Britt-Gibson.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Darrell Britt-Gibson</h4> <p>Jermaine Jefrint</p> <p>17 episoade • 2018-2022</p></div>
+                    <div class="column"><img src="imagini/Andy Carey.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Andy Carey</h4> <p>Eric</p> <p>16 episoade • 2018-2023</p></div>
+                    </div>
+                    <br><br><br>
+                    <div class="row" >
+                        <div class="column"><img src="imagini/Alejandro Furth.jpg" class="cerc" width="100%"/></div>
+                        <div class="column"><h4>Alejandro Furth</h4> <p>Antonio Manuel</p> <p>16 episoade • 2018-2023</p></div>
+                        <div class="column"><img src="imagini/Kirby Howell-Baptiste.jpg" class="cerc" width="100%"/></div>
+                        <div class="column"><h4>Kirby Howell-Baptiste</h4> <p>Sasha Smith</p> <p>16 episoade • 2018-2023</p></div>
+                        </div>
+                        <br><br><br>
+                <div class="row" >
+                    <div class="column"><img src="imagini/Fred Malamed.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Fred Malamed</h4> <p>Tom Posorro</p> <p>9 episoade • 2022-2023</p></div>
+                    <div class="column"><img src="imagini/Andrew Leeds.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Andrew Leeds</h4> <p>Leo Cousineau</p> <p>12 episoade • 2019-2023</p></div>
+                    </div>
+                <br><br><br>
+            <div class="row" >
+                    <div class="column"><img src="imagini/Paula Newsome.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Paula Newsome</h4> <p>Detective Janice Moss</p> <p>9 episoade • 2018-2019</p></div>
+                    <div class="column"><img src="imagini/Robert Wisdom.jpg" class="cerc" width="100%"/></div>
+                    <div class="column"><h4>Robert Wisdom</h4> <p>Jim Moss</p> <p>11 episoade • 2022-2023</p></div>
+            </div>
+            <br><br><br>
+            <div class="row" >
+                <div class="column"><img src="imagini/Sarah Burns.jpg" class="cerc" width="100%"/></div>
+                <div class="column"><h4>Sarah Burns</h4> <p>Detective Mae Dunn</p> <p>13 episoade • 2019-2023</p></div>
+                <div class="column"><img src="imagini/John Pirruccello.jpg" class="cerc" width="100%"/></div>
+                <div class="column"><h4>John Piiruccello</h4> <p>Detective John Loach</p> <p>13 episoade • 2018-2019</p></div>
+        </div>
+        <br><br><br>
+        <div class="row" >
+            <div class="column"><img src="imagini/Glenn Fleshler.jpg" class="cerc" width="100%"/></div>
+            <div class="column"><h4>Glenn Fleshler</h4> <p>Goran Pazar</p> <p>9 episoade • 2018-2022</p></div>
+            <div class="column"><img src="imagini/JB Blanc.jpg" class="cerc" width="100%"/></div>
+            <div class="column"><h4>JB Blanca</h4> <p>Batir</p> <p>8 episoade • 2019-2023</p></div>
+    </div>
+    <br><br><br>
+    <div class="row" >
+        <div class="column"><img src="imagini/Nick Gracer.jpg" class="cerc" width="100%"/></div>
+        <div class="column"><h4>Nick Gracer</h4> <p>Yandar</p> <p>13 episoade • 2019-2022</p></div>
+        <div class="column"><img src="imagini/Troy Claylak.jpg" class="cerc" width="100%"/></div>
+        <div class="column"><h4>Turhan Troy Claylak</h4> <p>Akhmal</p> <p>13 episoade • 2019-2022</p></div>
+</div>
+    <br><br><br>
+</div>
+<button class="accordion"><h3 align="center"><b><i>Premii și Nominalizări</i></b></h1></button>
+  <div class="panel">
+    <h5 align="center">55 Nominalizări | 10 premii Emmy</h5>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 1.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor principal într-un serial de comedie - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Bill Hader, în rolul lui Barry</p>
+      <p2>Barry</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și Hanarply</p2>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun serial de comedie - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+      <p2>Bill Hader, producător executiv</p>
+      <p2>Alec Berg, producător executiv</p>
+      <p2>Aida Rodgers, producător executiv</p>
+      <p2>Liz Sarnoff, producător executiv</p>
+      <p2>Duffy Boudreau, co-producător executiv</p>
+      <p2>Duffy Boudreau, co-producător executiv</p>
+      <p2>Produs de Julie Camino</p2>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Mixaj de sunet remarcabil pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"wow"</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+      <p2>Ponsdomenech, CAS, Mixer de reînregistrare</p>
+      <p2>Teddy Salas, mixer de reînregistrare</p>
+      <p2>Scott Harber, CAS, Mixer de producție</p>
+      <p2>Aaron Hasson, Mixer ADR</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Coordonare remarcabilă a cascadorii pentru un serial de comedie sau un program de varietate - 2023</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Barry</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+      <p2>Wade Allen, coordonator cascadorii</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Scriere remarcabilă pentru un serial de comedie - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"wow"</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+      <p2>Scris de Bill Hadder</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cinematografie remarcabilă pentru o serie (jumătate de oră) - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"tricky legacies"</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+      <p2>Carl Herse, director de fotografie</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 2.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Anthony Carrigan, în rolul lui Noho Hank</p>
+      <p2>Barry</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și Hanarply</p2>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 3.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2023</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Henry Winkler, în rolul lui Gene Cousineau</p>
+      <p2>Barry</p>
+      <p2>HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și Hanarply</p2> 
+    </div>
+  </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Editare de sunet remarcabilă pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2023</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"wow"</p>
+        <p2>HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Sean Heissinger, co-supervizor editor de sunet</p>
+        <p2>Matthew E. Taylor, co-supraveghetor de editor de sunet</p>
+        <p2>John Creed, MPSE, Editor de dialog</p>
+        <p2>Liz Sarnoff, producător executiv</p>
+        <p2>Rickley W. Dumm, MPSE, Editor de efecte sonore</p>
+        <p2>Strada Deron, Editor de sunet</p>
+        <p2>Clay Weber, MPSE, Editor de sunet</p>
+        <p2>Michael Brake, MPSE, Editor muzical</p>
+        <p2>Darrin Mann, Editor Foley</p>
+        <p2>Alyson Dee Moore, MPSE, Foley Artist</p>
+        <p2>Chris Moriana, artist Foley</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cea mai bună regie pentru un serial de comedie - 2023</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"wow"</p>
+        <p2>HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Regizat de Bill Hadder</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Editare remarcabilă de imagini pentru o serie de comedie cu o singură cameră - 2023</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"wow"</p>
+        <p2>HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Franky Guttman, ACE, editor</p>
+        <p2>Ali Greer, ACE, editor</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Casting remarcabil pentru un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Distribuție de Sherry Thomas, CSA</p>
+        <p2>Distribuție de Sharon Bialy, CSA</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cea mai bună regie pentru un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"710N"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Regizat de Bill Hadder</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Editare remarcabilă de imagini cu o singură cameră pentru o serie de comedie - 2022</p></div>
+        <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+        <p2>Barry</p>
+        <p2>"starting now"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+        <p2>Ali Greer, editor</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 1.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cel mai bun actor principal într-un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Bill Hader, în rolul lui Barry Berkman / Barry Block</p>
+        <p2>Barry</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p2>
+        </div>
+      </div>
+      <br><br><br>  
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cel mai bun serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"wow"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Alec Berg, producător executiv</p>
+        <p2>Bill Hader, producător executiv</p>
+        <p2>Aida Rodgers, producător executiv</p>
+        <p2>Liz Sarnoff, producător executiv</p>
+        <p2>Emily Heller, producător supervizor</p>
+        <p2>Jason Kim, producător supervizor</p>
+        <p2>Duffy Boudreau, producător</p>
+        <p2>Produs de Julie Camino</p>
+        </div>
+      </div>
+      <br><br><br>  
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Mixaj de sunet remarcabil pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"all the sauces"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Elmo Ponsdomenech, CAS, Mixer de reînregistrare</p>
+        <p2>Teddy Salas, mixer de reînregistrare</p>
+        <p2>Scott Harber, CAS, Mixer de producție</p>
+        </div>
+      </div>
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Coordonare remarcabilă a cascadorii pentru un serial de comedie sau un program de varietate - 2022</p></div>
+        <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+        <p2>Barry</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+        <p2>Wade Allen, coordonator cascadorii</p>
+        </div>
+      </div>
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Performanță de cascadorie remarcabilă - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"710N"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Clay Cullen, cascador</p>
+        <p2>David Castillo, cascador</p>
+        <p2>Jolene Van Vugt, cascadorie</p>
+        <p2>Chris Morrison, cascador</p>
+        </div>
+      </div>
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Scriere remarcabilă pentru un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"710N"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p>
+        <p2>Scris de Duffy Boudreau</p>
+        </div>
+      </div>  
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Scriere remarcabilă pentru un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"starting now"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>Scris de Alec Berg</p>
+        <p2>Scris de Bill Hadder</p>
+        </div>
+      </div>  
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cinematografie remarcabilă pentru o serie cu o singură cameră (jumătate de oră) - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Barry</p>
+        <p2>"starting now"</p>
+        <p2>HBO/HBO Max</p>
+        <p2>Carl Herse, director de fotografie</p>
+        </div>
+      </div>  
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column4" class="container"><img src="imagini/Emmy 2.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Anthony Carrigan, în rolul lui Noho Hank</p>
+        <p2>Barry</p>
+        <p2>HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p2>
+        </div>
+      </div>
+      <br><br><br> 
+      <div class="row1" >
+        <div class="column4" class="container"><img src="imagini/Emmy 3.jpg" class="spațiu" width="60%"/></div>
+        <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2022</p></div>
+        <div class="column3"><p2>NOMINAT:</p>
+        <p2>Henry Winkler, în rolul lui Gene Cousineau</p>
+        <p2>Barry</p>
+        <p2>HBO Max</p>
+        <p2>HBO în asociere cu Alec Berg și Hanarply</p2> 
+      </div>
+    </div>
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Editare de sunet remarcabilă pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2022</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Barry</p>
+      <p2>"starting now"</p>
+      <p2>HBO/HBO Max</p>
+      <p2>HBO în asociere cu Alec Berg și HanarplyElmo</p>
+      <p2>Sean Heissinger, co-supervizor editor de sunet</p>
+      <p2>Matthew E. Taylor, co-supraveghetor de editor de sunet</p>
+      <p2>John Creed, editor de dialoguri</p>
+      <p2>Rickley W. Dumm, MPSE, Designer de sunet</p>
+      <p2>Clay Weber, editor de sunet</p>
+      <p2>Darrin Mann, editor de sunet</p>
+      <p2>Michael Brake, MPSE, Editor muzical</p>
+      <p2>Alyson Dee Moore, Artista Foley</p>
+      <p2>Chris Moriana, artist Foley</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Casting remarcabil pentru un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Distribuție de Sherry Thomas, CSA</p>
+      <p2>Distribuție de Sharon Bialy, CSA</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cea mai bună regie pentru un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"The Audition"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Regizat de Alec Berg</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cea mai bună regie pentru un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"ronny/lily"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Regizat de Bill Hader</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Editare remarcabilă de imagini cu o singură cameră pentru o serie de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"berkman > block"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Kyle Reiter, ACE, editor</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Editare remarcabilă de imagini cu o singură cameră pentru o serie de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"ronny/lily"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Berg și Hanarply Jeff Buchanan, editor</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cea mai bună compoziție muzicală pentru o serie (partitură dramatică originală) - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"What?!"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Muzică de David Wingo</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 1.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor principal într-un serial de comedie - 2019</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Bill Hader, în rolul lui Barry</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 5.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cea mai bună actriță în rol secundar într-un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Sarah Goldberg, ca Sally Reed</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p2>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Alec Berg, producător executiv</p>
+      <p2>Bill Hader, producător executiv</p>
+      <p2>Aida Rodgers, co-producător executiv</p>
+      <p2>Emily Heller, producător supervizor</p>
+      <p2>Julie Camino, producător</p>
+      <p2>Jason Kim, producător</p>
+      <p2>Liz Sarnoff, producător consultant</p>
+      </div>
+    </div> 
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Mixaj de sunet remarcabil pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2019</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Barry</p>
+      <p2>"ronny/lily"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Elmo Ponsdomenech, CAS, Mixer de reînregistrare</p>
+      <p2>Jason "Frenchie" Gaya, mixer de reînregistrare</p>
+      <p2>Aaron Hasson, Mixer ADR</p>
+      <p2>Benjamin Patrick, CAS, Mixer de producție</p>
+      </div>
+    </div>
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Coordonare remarcabilă a cascadorii pentru un serial de comedie sau un program de varietate - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Berg și Hanarply Wade Allen, coordonator cascadorii</p>
+      </div>
+    </div>  
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Scriere remarcabilă pentru un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"ronny/lily"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Scris de Alec Berg</p>
+      <p2>Scris de Bill Hader</p>
+      </div>
+    </div>  
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 2.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Anthony Carrigan, în rolul lui NOHO Hank</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      </div>
+    </div>  
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 4.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Stephen Root, în rolul lui Monroe Fuches</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      </div>
+    </div>  
+    <br><br><br> 
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 3.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Henry Winkler, în rolul lui Gene Cousineau</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Design de producție remarcabil pentru un program narativ (jumătate de oră) - 2019</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"ronny/lily"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Tyler B. Robinson, designer de producție</p>
+      <p2>Eric Schoonover, Art Director</p>
+      <p2>Rachael Ferrara, Decorator</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Mixaj de sunet remarcabil pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2019</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Barry</p>
+      <p2>"ronny/lily"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Matthew E. Taylor, co-supraveghetor de editor de sunet</p>
+      <p2>Sean Heissinger, co-supervizor editor de sunet</p>
+      <p2>Rickley W. Dumm, MPSE, Editor de efecte sonore</p>
+      <p2>Mark Allen, editor de efecte sonore</p>
+      <p2>John Creed, editor de dialoguri</p>
+      <p2>Harrison Meyle, editor de dialoguri</p>
+      <p2>Michael Brake, MPSE, Editor muzical</p>
+      <p2>Clayton Weber, Foley Editor</p>
+      <p2>Alyson Dee Moore, Artista Foley</p>
+      <p2>Chris Moriana, artist Foley</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Design de producție remarcabil pentru un program narativ (jumătate de oră sau mai puțin) - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Seven: Loud, Fast And Keep Going"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Tyler B. Robinson, designer de producție</p>
+      <p2>Eric Schoonover, Art Director</p>
+      <p2>Amber Haley, Decorator</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Casting remarcabil pentru un serial de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Distribuție de Sharon Bialy, CSA</p>
+      <p2>Distribuție de Sherry Thomas, CSA</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cea mai bună regie pentru un serial de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter One: Make Your Mark"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Regizat de Bill Hader</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Editare remarcabilă de imagini cu o singură cameră pentru o serie de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Eight: Know Your Truth"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Kyle Reiter, ACE, editor</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Editare remarcabilă de imagini cu o singură cameră pentru o serie de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Seven: Loud, Fast And Keep Going"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Jeff Buchanan, editor</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 1.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor principal într-un serial de comedie - 2018</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Bill Hader, în rolul lui Barry</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun serial de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Alec Berg, producător executiv</p>
+      <p2>Bill Hader, producător executiv</p>
+      <p2>Emily Heller, producător</p>
+      <p2>Produs de Aida Rodgers</p>
+      <p2>Liz Sarnoff, producător consultant</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Mixaj de sunet remarcabil pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2018</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Seven: Loud, Fast And Keep Going"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Todd Beckett, mixer de reînregistrare</p>
+      <p2>Elmo Ponsdomenech, CAS, Mixer de reînregistrare</p>
+      <p2>Ben Patrick, CAS, Mixer de producție</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Scriere remarcabilă pentru un serial de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter One: Make Your Mark"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Scris de Alec Berg</p>
+      <p2>Scris de Bill Hadder</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Scriere remarcabilă pentru un serial de comedie - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Seven: Loud, Fast And Keep Going"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Scris de Liz Sarnoff</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cinematografie remarcabilă pentru o serie cu o singură cameră (jumătate de oră) - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Eight: Know Your Truth"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Paula Huidobro, director de fotografie</p>
+      </div>
+    </div>  
+    <br><br><br>
+    <div class="row1" >
+      <div class="column4" class="container"><img src="imagini/Emmy 3.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Cel mai bun actor în rol secundar într-un serial de comedie - 2018</p></div>
+      <div class="column3"><p2 style="color:rgb(201, 173, 18);">CÂŞTIGĂTOR:</p>
+      <p2>Henry Winkler, în rolul lui Gene Cousineau</p>
+      <p2>Barry</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row1" >
+      <div class="column1" class="container"><img src="imagini/Emmy 6.jpg" class="spațiu" width="60%"/></div>
+      <div class="column2" class="container"><p>Editare de sunet remarcabilă pentru o serie de comedie sau dramă (jumătate de oră) și animație - 2018</p></div>
+      <div class="column3"><p2>NOMINAT:</p>
+      <p2>Barry</p>
+      <p2>"Chapter Seven: Loud, Fast And Keep Going"</p>
+      <p2>HBO</p>
+      <p2>HBO Entertainment în asociere cu Alec Berg și Hanarply</p>
+      <p2>Matthew E. Taylor, supraveghetor de sunet</p>
+      <p2>Sean Heissinger, Editor Dialogue/ADR</p>
+      <p2>Rickley W. Dumm, MPSE, Editor de efecte sonore</p>
+      <p2>John Sanacore, Foley Editor</p>
+      <p2>Michael Brake, MPSE, Editor muzical</p>
+      <p2>Hilda Hodges, Artista Foley</p>
+      <p2>Rick Owens, MPSE, Foley Artist</p>
+      </div>
+    </div>  
+  </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    </body>
+</html>
